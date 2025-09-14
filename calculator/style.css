@@ -1,0 +1,87 @@
+ /* style.css */
+/* Styles for Calculator
+   Created by Malagoni Manasa (2025) */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #402929;
+  overflow: hidden;
+}
+
+.background-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #1c0512cd, #041102);
+  animation: pulse 2s infinite ease-in-out;
+  z-index: -1;
+}
+
+
+
+.calculator {
+  background: #1e1e2f;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #ada8acc2;
+  padding: 20px;
+  width: 320px;
+  
+}
+
+.display {
+  background: #0f0f18;
+  color: #939a9a;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  background:white;
+  color: #211b1b;
+  font-size: 1.5rem;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 10px #1bdea3cf;
+}
+
+.btn:hover {
+  background: #21b2b7;
+  color: #1e1e2f;
+  box-shadow: 0 0 20px #dcd220;
+}
+
+.operator {
+  color: #c70d4e;
+}
+
+.equals {
+  background: #00f2ff;
+  color: #080825;
+  grid-column: span 1;
+}
+
+.zero {
+  grid-column: span 2;
+}
+footer {
+  color: #ffffff; /* Change this to any color you like */
+  background-color: #333333; /* Optional: adds a background color */
+}
